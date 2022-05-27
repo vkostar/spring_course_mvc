@@ -16,9 +16,11 @@
 
 
     Name <form:input path="name"/>
+    <form:errors path="name"/>
     <br>
     <br>
     Surname<form:input path="surName"/>
+    <form:errors path="surName"/>
     <br>
     <br>
 
@@ -34,7 +36,12 @@
     <br>
     <br>
 
-
+    Which car do you want?
+    <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
+    <br>
+    Foreigh Languages
+    <form:checkboxes path="languages" items="${employee.languageList}"/>
+    <br>
     <input type="submit" value="OK"/>
 
 
