@@ -25,6 +25,7 @@
     <br>
 
     Salary <form:input path="salary"/>
+    <form:errors path="salary"/>
     <br>
     <br>
 
@@ -41,6 +42,15 @@
     <br>
     Foreigh Languages
     <form:checkboxes path="languages" items="${employee.languageList}"/>
+    <br>
+
+    Phonenumber <form:input path="phoneNumber"/>
+    <form:errors path="phoneNumber"/>
+    <br>
+    <br>
+    Email <form:input path="email"/>
+    <form:errors path="email"/>
+    <br>
     <br>
     <input type="submit" value="OK"/>
 
